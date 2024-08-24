@@ -5,3 +5,10 @@ export const getAll = async (setData) => {
   const data = await res.json();
   setData(data);
 };
+
+export const add = async (data) => {
+  await fetch(`${RECORDS_API}/add`, {
+    method: "POST",
+    body: JSON.stringify(data)
+  });
+};
