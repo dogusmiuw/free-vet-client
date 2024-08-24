@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 
 function AddRecordForm() {
   return (
-    <Form>
+    <Form className="mb-5">
       <Form.Group className="mb-3">
         <Form.Label>Klinik adı</Form.Label>
         <Form.Control type="text" placeholder="X veteriner kliniği" />
