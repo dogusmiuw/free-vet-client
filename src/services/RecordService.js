@@ -9,6 +9,9 @@ export const getAll = async (setData) => {
 export const add = async (data) => {
   await fetch(`${RECORDS_API}/add`, {
     method: "POST",
+    headers: {
+      'Content-Type': 'application/json'
+    },
     body: JSON.stringify(data)
   });
 };
